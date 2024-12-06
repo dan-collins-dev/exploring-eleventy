@@ -1,0 +1,13 @@
+---
+layout: layouts/base.liquid
+---
+<h1>Exploring 11ty and deploying to GH Pages</h1>
+<hr>
+
+{% for post in collections.post %}
+    <p><a href="{{post.url}}">{{post.data.title}}</a></p>
+    <p>
+        {{ post.content }}
+    </p>
+    <hr>
+{% endfor %}
